@@ -1,8 +1,7 @@
 kind: pipeline
 name: default
 steps:
-- name: frontend
-  image: node
+- name: test
+  image: node:12.13.0
   commands:
-  - npm ci
-  - npm run test:unit
+  - npm -v
